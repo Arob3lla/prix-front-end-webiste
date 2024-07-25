@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Prix | Home </title>
+    <link rel="stylesheet" href="/con-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="/img/icon.png">
+</head>
+<body>
+
+    <!-- ### Navbar ### -->
+    <header class="header">
+        <a href="#" class="logo">PRIX</a>
+
+        <input type="checkbox" name="" id="check">
+
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="/index.html" style="--i:0;">Home</a>
+            <a href="/gallery.html" style="--i:1;">Gallery</a>
+            <a href="/contact.html" style="--i:2;">Contact</a>
+        </nav>
+
+    </header>
+
+<!-- ### contact us ### -->
+
+    <section class="section contact" id="contact">
+        <h2 class="h2 section-title bot-space reveal-bot" data-reveal="bottom">
+            Ask us Any <span class="span">Query</span>
+        </h2>
+
+        <form action="#" class="reveal">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns center">
+                <button type="submit" class="btn">submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- ### footer ### -->
+    <footer class="footer">
+        <div class="footer-text reveal-left">
+            <p>Copyright &copy; 2024 by Hamdard </p>
+        </div>
+
+        <div class="footer-iconTop reveal-right">
+            <a href=""><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+
+    </footer>
+
+
+
+
+
+<!-- ### java script ### -->
+<script>
+            // scroll reveal library for the scroll effect
+
+            ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 100
+    });
+    ScrollReveal().reveal('.reveal-bot', { delay: 100, origin: 'bottom', interval: 100 });
+    ScrollReveal().reveal('.reveal-right', { delay: 100, origin: 'right', interval: 100 });
+    ScrollReveal().reveal('.reveal-left', { delay: 100, origin: 'left', interval: 100 });
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
